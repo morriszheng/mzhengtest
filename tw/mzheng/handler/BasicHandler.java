@@ -16,9 +16,9 @@ public class BasicHandler<T> implements Handler<T> {
 	static MysqlDataSource ds;
 	static {
 		ds = new MysqlDataSource();
-		//ds.setUrl("jdbc:mysql://192.168.0.13:3306/thlotterydb178");
-		//ds.setUser("morris");
-		//ds.setPassword("201505");
+		//ds.setUrl("jdbc:mysql://192.168.0.13:3306/dbname");
+		//ds.setUser("user");
+		//ds.setPassword("password");
 		ds.setUrl(
 				String.format("jdbc:mysql://%s:%s/%s",
 				config.getString("DBServerIP"),	
